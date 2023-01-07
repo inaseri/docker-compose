@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=iman
+    ports:
+      - '5432:5432'
+    volumes:
+      - '/Users/iman/Documents/volumes/iman/postgres:/var/lib/postgresql/data'
